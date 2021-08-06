@@ -1,0 +1,98 @@
+.container{
+    width: 100%;
+    background-color: #fae5df;
+    height: 100vh;
+}
+
+.cot{
+    padding-top: 13%;
+    
+}
+
+.registercontainer{
+    width: 35%;
+    background-color: black;
+    border-radius: 15px;
+    margin: 0% auto;
+    box-shadow: -12px -12px 2px 1px #fabdb2;
+}
+
+
+.registerlist{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #eb998d;
+}
+
+.formregister{
+    margin-top: 0.4%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #eb998d;
+}
+
+.register{
+    padding: 4% 0;
+    font-size: larger;
+    padding-left: 4%;
+    list-style: none;
+}
+
+
+
+.register > li{
+    padding: 4% 4%;
+    display: inline;
+}
+.register >li >a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.register >li >a:hover{
+    color: blanchedalmond;
+}
+
+.usernamepair,.passwordpair{
+    display: grid;
+    width: 60%;
+    margin-left: 10%;
+    grid-template-columns: auto auto;
+}
+
+.usernamepair{
+
+    margin-bottom: 5%;
+}
+label[for=username],label[for=password]
+{
+    font-size: larger;
+    margin: auto 0;
+}
+
+.usernamepair>input,.passwordpair>input{
+    padding: 5%;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.send{
+    padding-top: 10%;
+}
+
+.signup{
+    padding-top: 10%;
+}
+
+.buttonsubmit{
+    margin-left: 40%;
+    padding: 8% 0;
+}
+
+.submit{
+    padding:2% 5%;
+    border-radius: 10px;
+    width: 30%;
+    font-size: large;
+}

@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="cot">
+        <div class="registercontainer">
+            
+            <div class="registerlist">
+                <ul class="register">
+                    <li [ngStyle]="{'background-color': register==false ? '#fabdb2' : ''}" (click)="Change(false)"><a href="#">SignUp</a></li>
+                    <li [ngStyle]="{'background-color': register==true ? '#fabdb2' : ''}" (click)="Change(true)"><a href="#">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="formregister">
+                <div class="send" *ngIf="register">
+                    <form action="">
+                        <div class="usernamepair">
+                            <label for="username" class="user">Username</label>
+                            <input type="text" name="" id="username">
+                        </div>
+                        <div class="passwordpair">
+                            <label for="password" class="pass">Password</label>
+                            <input type="password" name="" id="password">
+                        </div>
+                        <div class="buttonsubmit">
+                            <input type="submit" value="Login" class="submit">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="signup" *ngIf="!register">
+                    <form action="">
+                        <div class="usernamepair">
+                            <label for="username" class="user">Username</label>
+                            <input type="text" name="" id="username">
+                        </div>
+                        <div class="passwordpair">
+                            <label for="password" class="pass">Password</label>
+                            <input type="password" name="" id="password">
+                        </div>
+                        <div class="buttonsubmit">
+                            <input type="submit" value="Signup" class="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
