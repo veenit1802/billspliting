@@ -14,7 +14,7 @@
     background-color: black;
     border-radius: 15px;
     margin: 0% auto;
-    box-shadow: -12px -12px 2px 1px #fabdb2;
+    box-shadow: -12px -12px 2px 1px #f8c8c0;
 }
 
 
@@ -28,7 +28,7 @@
     margin-top: 0.4%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #eb998d;
+    background-color: #fabdb2;
 }
 
 .register{
@@ -42,6 +42,7 @@
 
 .register > li{
     padding: 4% 4%;
+    border-radius: 10px;
     display: inline;
 }
 .register >li >a{
@@ -58,7 +59,7 @@
     display: grid;
     width: 60%;
     margin-left: 10%;
-    grid-template-columns: auto auto;
+    /* grid-template-columns: auto auto; */
 }
 
 .usernamepair{

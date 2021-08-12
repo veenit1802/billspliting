@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
     <div class="cot">
         <div class="registercontainer">
             
@@ -11,14 +11,18 @@
 
             <div class="formregister">
                 <div class="send" *ngIf="register">
-                    <form action="">
+                    <form action="" [formGroup]="login">
                         <div class="usernamepair">
                             <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username">
+                            <input type="text" name="" id="username" placeholder="username" formControlName="username" >
+                            <span 
+                                *ngIf="registerFormControl.username.touched && registerFormControl.username.errors?.required">
+                                User Name is not available
+                            </span>
                         </div>
                         <div class="passwordpair">
                             <label for="password" class="pass">Password</label>
-                            <input type="password" name="" id="password">
+                            <input type="password" name="" id="password" placeholder="password" formControlName="password">
                         </div>
                         <div class="buttonsubmit">
                             <input type="submit" value="Login" class="submit">
@@ -27,22 +31,24 @@
                 </div>
 
                 <div class="signup" *ngIf="!register">
-                    <form action="">
+                    <form action="" [formGroup]="signUp">
                         <div class="usernamepair">
                             <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username">
+                            <input type="text" name="" id="username" placeholder="username" formControlName="username">
                         </div>
                         <div class="passwordpair">
                             <label for="password" class="pass">Password</label>
-                            <input type="password" name="" id="password">
+                            <input type="password" name="" id="password" placeholder="password" formControlName="password">
                         </div>
+                      
                         <div class="buttonsubmit">
                             <input type="submit" value="Signup" class="submit">
                         </div>
+                       
                     </form>
                 </div>
             </div>
-
+            
         </div>
     </div>
 </div>
