@@ -187,27 +187,31 @@
     <div class="card cardholder" *ngIf="clicked" >
         <div class="card-body">
         <h5 class="card-title">Create Group</h5>
-        <form [formGroup]="grp" >
+        <form action="" [formGroup]="grp">
+            <!-- <div class="form-group">
+            <label for="GpName">Group Name</label>
+            <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name">
+            </div> -->
             <div class="form-group">
-                <label for="GpName">mem1</label>
-                <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name" formControlName="mem1">
+            <label for="mem1">Member1</label>
+            <input type="text" class="form-control" id="mem1" placeholder="mem1"formControlName="mem1">
             </div>
             <div class="form-group">
-                <label for="GpName">mem2</label>
-                <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name" formControlName="mem2">
-            </div>
-            <div class="form-group">
-                <label for="GpName">mem3</label>
-                <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name" formControlName="mem3">
-            </div>
-            <div class="form-group">
-                <label for="GpName">mem4</label>
-                <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name" formControlName="mem4">
-            </div>
-            <div class="form-group">
-                <label for="GpName">mem5</label>
-                <input type="text" class="form-control" id="GpName" aria-describedby="emailHelp" placeholder="Enter group Name" formControlName="mem5">
-            </div>
+                <label for="mem1">Member2</label>
+                <input type="text" class="form-control" id="mem1" placeholder="mem2"formControlName="mem2">
+                </div>
+                <div class="form-group">
+                    <label for="mem1">Member3</label>
+                    <input type="text" class="form-control" id="mem1" placeholder="mem3"formControlName="mem3">
+                    </div>
+                    <div class="form-group">
+                        <label for="mem1">Member4</label>
+                        <input type="text" class="form-control" id="mem1" placeholder="mem4"formControlName="mem4">
+                        </div>
+                        <div class="form-group">
+                            <label for="mem1">Member5</label>
+                            <input type="text" class="form-control" id="mem1" placeholder="mem5" formControlName="mem5">
+                            </div>
             <button type="submit" class="btn btn-danger grpbutton" (click)="check()" >Cancel</button>
             <button type="submit" class="btn btn-primary grpbutton">Submit</button>
         </form>

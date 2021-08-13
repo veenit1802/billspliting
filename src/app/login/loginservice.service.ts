@@ -10,18 +10,36 @@ import { Observable } from 'rxjs';
 
 export class LoginserviceService {
 
+  url="http://localhost:8080/user/authenticate"
+
   constructor(private http:HttpClient) { }
+
+  //for login user
+  loginUser(token: any){
+    localStorage.setItem("token",token)
+    return true;
+  }
+  isLoggedIn(){
+    let token=localStorage.getItem("token");
+    if(token==undefined || token==''||token==null){
+      return false;
+    }else{
+      return true;
+    }
+  }
+  logout(){
+    localStorage.removeItem('token');
+    return true;
+  }
+  getToken(){
+    return localStorage.getItem("token");
+
+  }
 
   sendData(data:any)
   {
     console.log(data);
-    return this.http.post("http://localhost:8080/user/authenticate",{
-      "emailId":"veenitshukla20@",
-      "password":"ve12",
-      "registered":"true"
-    }
-    ).subscribe(()=>{
-      console.log("hello");
-    })
+    return this.http.post("http://localhost:8080/user/authenticate",data
+    )
   }
 }
