@@ -40,15 +40,23 @@ export class LoginComponent implements OnInit {
 
 
 
-  constructor(private fb:FormBuilder,private   loginService:LoginserviceService) { }
+  constructor(private fb:FormBuilder,private loginService:LoginserviceService) { }
 
   ngOnInit(): void {
   }
 
   sendLogin()
   {
-    this.loginService?.sendData(this.login.value);
-  }
+    this.loginService.sendData(this.login.value).subscribe(
+      (success:any) => {
+     console.log(success);
+     this.loginService.loginUser(success.jwtToken);
+     window.location.href="/home"
+ },
+ error => {
+     console.log(error);
+ })
+}
 
   sendSignup()
   {
