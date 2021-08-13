@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
 
   constructor() { }
+  clicked:boolean=false;
 
   ngOnInit(): void {
+  }
+
+  check()
+  {
+    this.clicked=!this.clicked;
   }
 
 }

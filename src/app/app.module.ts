@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+import { GrpcollectionComponent } from './grpcollection/grpcollection.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomepageComponent,
-    NavigationbarComponent
+    NavigationbarComponent,
+    GrpcollectionComponent
   ],
   imports: [
     BrowserModule,

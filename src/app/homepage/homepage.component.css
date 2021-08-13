@@ -3,11 +3,9 @@
 }
 
 
-
 .mycard{
     margin-top: 50px;
 }
-
 
 
 .addicon{
@@ -17,9 +15,106 @@
 }
 
 
-
-
 .mainicon{
- 
-    width: 10%;
+    width: 40px;
+    cursor: pointer;
+}
+
+.form-group{
+    margin: 3%;
+}
+
+.form-group >label{
+    margin-bottom: 1%;
+}
+
+.grpbutton{
+    display: inline;
+    margin-left: 25%;
+}
+
+
+
+.hompageholder{
+    position:relative;
+}
+
+
+
+
+@media only screen and (min-width: 50px) {
+
+    .imgcontainer{
+        margin-bottom: 1%;
+    }
+    .cardholder{
+        width: 35rem;
+        position: fixed;
+        top: 400px;
+        margin-left: -4%;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .imgcontainer{
+        margin-bottom: 0.8%;
+    }
+    .cardholder{
+        width: 40rem;
+        position: fixed;
+        top: 400px;
+        margin-left: -8%;
+    }
+}
+@media only screen and (min-width: 772px) {
+    .imgcontainer{
+        margin-bottom: 0.8%;
+    }
+    .cardholder{
+        width: 40rem;
+        width: 10%;
+        position: fixed;
+        top: 400px;
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .imgcontainer{
+        margin-bottom: 0.8%;
+    }
+    .cardholder{
+        width: 40rem;
+        position: fixed;
+        /* top: 600px; */
+        margin-top: 10%;
+        /* margin-left: 20%; */
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .imgcontainer{
+        margin-bottom: 0.8%;
+    }
+    .cardholder{
+        width: 40rem;
+        position: fixed;
+        /* top: 600px; */
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1270px) {
+    .imgcontainer{
+        margin-bottom: 0.6%;
+    }
+    .cardholder{
+        width: 40rem;
+        position: fixed;
+        top: 300px;
+    }
 }
