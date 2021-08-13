@@ -14,11 +14,11 @@
                     <form action="" [formGroup]="login">
                         <div class="usernamepair">
                             <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username" placeholder="username" formControlName="username" >
-                            <span 
+                            <input type="text" name="" id="username" placeholder="username" formControlName="emailId" >
+                            <!-- <span 
                                 *ngIf="registerFormControl.username.touched && registerFormControl.username.errors?.required">
                                 User Name is not available
-                            </span>
+                            </span> -->
                         </div>
                         <div class="passwordpair">
                             <label for="password" class="pass">Password</label>
@@ -34,7 +34,7 @@
                     <form action="" [formGroup]="signUp">
                         <div class="usernamepair">
                             <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username" placeholder="username" formControlName="username">
+                            <input type="text" name="" id="username" placeholder="username" formControlName="emailId">
                         </div>
                         <div class="passwordpair">
                             <label for="password" class="pass">Password</label>

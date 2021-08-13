@@ -16,13 +16,13 @@ export class LoginComponent implements OnInit {
 
 
   signUp  = this.fb.group({
-    username:['',Validators.required],
+    emailId:['',Validators.required],
     password:['',Validators.required],
     registered:['true']
   });
 
   login = this.fb.group({
-    username:['',Validators.required],
+    emailId:['',Validators.required],
     password:['',Validators.required],
     registered:['false']
 
@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
 
   sendSignup()
   {
-    this.loginService?.sendData(this.signUp.value);
+    this.loginService.sendData(this.signUp.value);
   }
 
 }

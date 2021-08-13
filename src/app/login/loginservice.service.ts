@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { LoginComponent } from './login.component';
+
 
 
 @Injectable({
@@ -12,9 +12,16 @@ export class LoginserviceService {
 
   constructor(private http:HttpClient) { }
 
-  sendData(data:LoginComponent)
+  sendData(data:any)
   {
     console.log(data);
-    return this.http.post("local",data);
+    return this.http.post("http://localhost:8080/user/authenticate",{
+      "emailId":"veenitshukla20@gmail.com12",
+      "password":"ve12",
+      "registered":"true"
+    }
+    ).subscribe(()=>{
+      console.log("hello");
+    })
   }
 }
