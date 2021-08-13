@@ -16,7 +16,7 @@ export class LoginserviceService {
   {
     console.log(data);
     return this.http.post("http://localhost:8080/user/authenticate",{
-      "emailId":"veenitshukla20@gmail.com12",
+      "emailId":"veenitshukla20@",
       "password":"ve12",
       "registered":"true"
     }
