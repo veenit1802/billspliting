@@ -1,4 +1,5 @@
 <div class="container-fluid">
+    <h1 class="display-1 d-flex justify-content-center">SPLIT BILL</h1>
     <div class="cot">
         <div class="registercontainer">
             
@@ -13,8 +14,8 @@
                 <div class="send" *ngIf="register">
                     <form action="" [formGroup]="login">
                         <div class="usernamepair">
-                            <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username" placeholder="username" formControlName="emailId" >
+                            <label for="emailId" class="user">EmailId</label>
+                            <input type="email" name="" id="emailId" placeholder="emailId" formControlName="emailId" >
                             <!-- <span 
                                 *ngIf="registerFormControl.username.touched && registerFormControl.username.errors?.required">
                                 User Name is not available
@@ -33,10 +34,18 @@
                 <div class="signup" *ngIf="!register">
                     <form action="" [formGroup]="signUp">
                         <div class="usernamepair">
-                            <label for="username" class="user">Username</label>
-                            <input type="text" name="" id="username" placeholder="username" formControlName="emailId">
+                            <label for="emailId" class="user">EmailId</label>
+                            <input type="email" name="" id="emailId" placeholder="emailId" formControlName="emailId">
                         </div>
-                        <div class="passwordpair">
+                        <div class="usernamepair">
+                            <label for="name" class="user">Name</label>
+                            <input type="text" name="" id="name" placeholder="name" formControlName="name">
+                        </div>
+                        <div class="usernamepair">
+                            <label for="phoneNumber" class="pass">PhoneNumber</label>
+                            <input type="number" name="" id="phoneNumber" placeholder="phoneNumber" formControlName="phoneNumber">
+                        </div>
+                        <div class="usernamepair">
                             <label for="password" class="pass">Password</label>
                             <input type="password" name="" id="password" placeholder="password" formControlName="password">
                         </div>
