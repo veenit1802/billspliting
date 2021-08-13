@@ -50,7 +50,7 @@
     .cardholder{
         width: 35rem;
         position: fixed;
-        top: 400px;
+        top: 300px;
         margin-left: -4%;
     }
 }
@@ -62,8 +62,8 @@
     .cardholder{
         width: 40rem;
         position: fixed;
-        top: 350px;
-        margin-left: -8%;
+        top: 200px;
+        margin-left: -3%;
     }
 }
 @media only screen and (min-width: 772px) {
@@ -72,10 +72,10 @@
     }
     .cardholder{
         width: 40rem;
-        width: 10%;
+        /* width: 10%; */
         position: fixed;
-        top: 350px;
-        margin-left: 3%;
+        top: 200px;
+        margin-left: 1%;
     }
 }
 
@@ -86,9 +86,9 @@
     .cardholder{
         width: 40rem;
         position: fixed;
-        /* top: 600px; */
-        margin-top: 10%;
-        /* margin-left: 20%; */
+        top: 200px;
+        /* margin-top: 5%; */
+        /* margin-left: -3%; */
     }
 }
 
@@ -100,7 +100,7 @@
     .cardholder{
         width: 40rem;
         position: fixed;
-        /* top: 600px; */
+        top: 100px;
         margin-top: 10%;
         margin-left: 20%;
     }
@@ -115,6 +115,6 @@
     .cardholder{
         width: 40rem;
         position: fixed;
-        top: 300px;
+        top: 50px;
     }
 }

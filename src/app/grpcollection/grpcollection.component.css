@@ -16,12 +16,9 @@
 }
 
 
-.mybtn2{
-    margin-left: 4%;
-}
-
 .mybtn1{
-    margin-left: 35%;
+    margin-top: 2%;
+    margin-left: 40%;
 }
 
 
@@ -52,4 +49,13 @@
         margin-top: 5%;
     }
     
+}
+
+
+div > label{
+    margin-bottom: 1%;
+}
+
+.inp{
+    margin-bottom: 1%;
 }

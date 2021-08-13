@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-grpcollection',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrpcollectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
+
+  transact = this.fb.group({
+    grpId:[''],
+    amount:[''],
+    description:['']
+  });
+
 
 }

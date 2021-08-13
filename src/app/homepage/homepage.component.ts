@@ -53,6 +53,9 @@ export class HomepageComponent implements OnInit {
       this.hp.sendData(this.grp.value).subscribe(
         (success:any) => {
       console.log(success);
+      (err:any)=>{
+        console.log(err);
+      }
     })
   }
 

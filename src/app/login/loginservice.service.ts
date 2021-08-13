@@ -36,10 +36,12 @@ export class LoginserviceService {
 
   }
 
+
+
   sendData(data:any)
   {
+  
     console.log(data);
-    return this.http.post("http://localhost:8080/user/authenticate",data
-    )
+    return this.http.post("http://localhost:8080/user/authenticate",data);
   }
 }
