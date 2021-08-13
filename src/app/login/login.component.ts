@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { LoginserviceService } from './loginservice.service';
 
 
 @Component({
@@ -23,7 +24,7 @@ export class LoginComponent implements OnInit {
   login = this.fb.group({
     username:['',Validators.required],
     password:['',Validators.required],
-    registered:['false']//..,,,mmmn
+    registered:['false']
 
   });
 
@@ -37,9 +38,21 @@ export class LoginComponent implements OnInit {
     this.register = !this.register;
   }
 
-  constructor(private fb:FormBuilder) { }
+
+
+  constructor(private fb:FormBuilder,private   loginService:LoginserviceService) { }
 
   ngOnInit(): void {
+  }
+
+  sendLogin()
+  {
+    this.loginService?.sendData(this.login.value);
+  }
+
+  sendSignup()
+  {
+    this.loginService?.sendData(this.signUp.value);
   }
 
 }

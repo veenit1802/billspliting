@@ -25,7 +25,7 @@
                             <input type="password" name="" id="password" placeholder="password" formControlName="password">
                         </div>
                         <div class="buttonsubmit">
-                            <input type="submit" value="Login" class="submit">
+                            <input type="submit" value="Login" class="submit" (click)="sendLogin()">
                         </div>
                     </form>
                 </div>
@@ -42,7 +42,7 @@
                         </div>
                       
                         <div class="buttonsubmit">
-                            <input type="submit" value="Signup" class="submit">
+                            <input type="submit" value="Signup" class="submit" (click)="sendSignup()">
                         </div>
                        
                     </form>
